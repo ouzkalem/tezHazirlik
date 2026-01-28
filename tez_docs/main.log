@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.30)  28 JAN 2026 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.30)  28 JAN 2026 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,28 +362,627 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip58
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+ (c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip59
+\bibsep=\skip60
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count312
+) (c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count313
+\l__pdf_internal_box=\box61
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 441.01773pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=441.01773pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 69.
+ (./main.out) (./main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+ (c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+ (c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[1
+
+{c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 
-! LaTeX Error: File `listings.sty' not found.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \end{abstract}
+                    [1] (./main.toc
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.37 \lstset
-            {^^M
-*** (cannot \read from terminal in nonstop modes)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 ...ne {4.2}Veri KaynaklarÄ±}{11}{section.4.2}
+                                                  % [1
 
- 
+])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+
+
+[2] (./main.lof)
+\tf@lof=\write5
+\openout5 = `main.lof'.
+
+
+
+[3
+
+] (./main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+
+
+[4
+
+]
+B\"ol\"um 1.
+(./chapters/01_giris.tex
+
+[5
+
+])
+
+[6]
+B\"ol\"um 2.
+(./chapters/02_literatur.tex
+
+Package natbib Warning: Citation `rakov2003lightning' on page 7 undefined on input line 3.
+
+
+Overfull \hbox (12.40338pt too wide) in paragraph at lines 19--20
+\T1/cmr/m/n/12 CAPE (Con-vec-tive Avail-able Po-ten-tial En-ergy) gibi at-mos-ferik sta-bilite in-dek-sleri y^^Yld^^Yr^^Ym
+ []
+
+
+Overfull \hbox (1.91422pt too wide) in paragraph at lines 23--24
+\T1/cmr/m/n/12 Son y^^Yl-larda makine ö§ren-mesi al-go-rit-malar^^Y y^^Yld^^Yr^^Ym tah-mini alan^^Ynda önemli geli³meler
+ []
+
+
+Overfull \hbox (2.19847pt too wide) in paragraph at lines 26--27
+[]\T1/cmr/bx/n/12 Random For-est: \T1/cmr/m/n/12 Birçok karar a§ac^^Yn^^Yn kom-bi-nasy-onu ile yük-sek do§ru-luk sa§lar. 
+ []
+
+
+
+[7
+
+])
+
+[8]
+B\"ol\"um 3.
+(./chapters/03_yontem.tex
+Overfull \hbox (12.06793pt too wide) in paragraph at lines 14--15
+\T1/cmr/m/n/12 ta-sy-onuna e³le³tir-ilmi³tir. En yak^^Yn is-ta-syon be-lir-len-mesinde Ök-lid mesafesi kul-lan^^Ylm^^Y³t^^Yr: 
+ []
+
+
+
+[9
+
+]
+
+[10])
+
+[11]
+B\"ol\"um 4.
+(./chapters/04_veri.tex
+
+[12
+
+]
+
+[13]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.87 ...[width=0.9\textwidth]{yillik_yildirim.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.87 ...[width=0.9\textwidth]{yillik_yildirim.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.87 ...[width=0.9\textwidth]{yillik_yildirim.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.87 ...[width=0.9\textwidth]{yillik_yildirim.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: width=0.9\textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...[width=0.9\textwidth]{yillik_yildirim.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<figures/yillik_yildirim.png, id=391, 867.24pt x 361.35pt>
+File: figures/yillik_yildirim.png Graphic file (type png)
+<use figures/yillik_yildirim.png>
+Package pdftex.def Info: figures/yillik_yildirim.png  used on input line 87.
+(pdftex.def)             Requested size: 867.2379pt x 361.34912pt.
+
+Overfull \hbox (426.22017pt too wide) in paragraph at lines 87--88
+ [][] 
+ []
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.94 ...s[width=0.9\textwidth]{aylik_yildirim.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.94 ...s[width=0.9\textwidth]{aylik_yildirim.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.94 ...s[width=0.9\textwidth]{aylik_yildirim.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.94 ...s[width=0.9\textwidth]{aylik_yildirim.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: width=0.9\textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...s[width=0.9\textwidth]{aylik_yildirim.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<figures/aylik_yildirim.png, id=393, 722.7pt x 361.35pt>
+File: figures/aylik_yildirim.png Graphic file (type png)
+<use figures/aylik_yildirim.png>
+Package pdftex.def Info: figures/aylik_yildirim.png  used on input line 94.
+(pdftex.def)             Requested size: 722.69823pt x 361.34912pt.
+
+Overfull \hbox (281.6805pt too wide) in paragraph at lines 94--95
+ [][] 
+ []
+
+
+
+[14 <./figures/yillik_yildirim.png>])
+
+[15 <./figures/aylik_yildirim.png>]
+B\"ol\"um 5.
+(./chapters/05_sonuclar.tex
+! Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.29 ...phics[width=0.8\textwidth]{roc_curves.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.29 ...phics[width=0.8\textwidth]{roc_curves.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.29 ...phics[width=0.8\textwidth]{roc_curves.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.29 ...phics[width=0.8\textwidth]{roc_curves.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: width=0.8\textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 ...phics[width=0.8\textwidth]{roc_curves.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `roc_curves.png' not found on input line 29.
+
+
+! Package pdftex.def Error: File `roc_curves.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 ...phics[width=0.8\textwidth]{roc_curves.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 29.
+(c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.40 ...dth=0.9\textwidth]{confusion_matrices.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.40 ...dth=0.9\textwidth]{confusion_matrices.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.40 ...dth=0.9\textwidth]{confusion_matrices.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.40 ...dth=0.9\textwidth]{confusion_matrices.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: width=0.9\textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...dth=0.9\textwidth]{confusion_matrices.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `confusion_matrices.png' not found on input line 40.
+
+
+! Package pdftex.def Error: File `confusion_matrices.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...dth=0.9\textwidth]{confusion_matrices.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[16
+
+]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.51 ...dth=0.8\textwidth]{feature_importance.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.51 ...dth=0.8\textwidth]{feature_importance.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.51 ...dth=0.8\textwidth]{feature_importance.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.51 ...dth=0.8\textwidth]{feature_importance.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: width=0.8\textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...dth=0.8\textwidth]{feature_importance.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `feature_importance.png' not found on input line 51.
+
+
+! Package pdftex.def Error: File `feature_importance.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...dth=0.8\textwidth]{feature_importance.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.82 ....8\textwidth]{precision_recall_curves.png}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.82 ....8\textwidth]{precision_recall_curves.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.82 ....8\textwidth]{precision_recall_curves.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.82 ....8\textwidth]{precision_recall_curves.png}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package keyval Error: width=0.8\textwidth  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ....8\textwidth]{precision_recall_curves.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `precision_recall_curves.png' not found on input line 82.
+
+
+! Package pdftex.def Error: File `precision_recall_curves.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ....8\textwidth]{precision_recall_curves.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[17])
+
+[18]
+B\"ol\"um 6.
+(./chapters/06_tartisma.tex
+
+[19
+
+]
+Overfull \hbox (5.50711pt too wide) in paragraph at lines 62--63
+\T1/cmr/m/n/12 yap^^Ylm^^Y³t^^Yr. Makine ö§ren-mesi al-go-rit-malar^^Yn^^Yn y^^Yld^^Yr^^Ym tah-mini için etk-ili araçlar oldu§u
+ []
+
+
+
+[20])
+No file main.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+
+
+[21] (./main.aux)
+ ***********
+LaTeX2e <2024-06-01> patch level 2
+L3 programming layer <2024-05-27>
+ ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 36FBCD80111ADDCF7A64EAE060538C03;8687.
+ ) 
 Here is how much of TeX's memory you used:
- 12945 strings out of 475544
- 204275 string characters out of 5776082
- 1925908 words of memory out of 5000000
- 35468 multiletter control sequences out of 15000+600000
- 559131 words of font info for 38 fonts, out of 8000000 for 9000
+ 14222 strings out of 475544
+ 228922 string characters out of 5776082
+ 1937908 words of memory out of 5000000
+ 36531 multiletter control sequences out of 15000+600000
+ 576670 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,0n,79p,280b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 75i,9n,79p,696b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> <c:/Users/USER/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/USER/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (23 pages, 362742 bytes).
+PDF statistics:
+ 971 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 435 words of extra memory for PDF output out of 10000 (max. 10000000)
+
