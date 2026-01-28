@@ -1,0 +1,107 @@
+\section{Çalışma Alanı}
+
+Bu çalışmada Hakkari ili ve çevresi incelenmiştir. Bölge, Türkiye'nin güneydoğusunda yer almakta olup yüksek rakımlı dağlık bir yapıya sahiptir.
+
+\subsection{Meteoroloji İstasyonları}
+
+Çalışmada kullanılan meteoroloji istasyonları Tablo \ref{tab:istasyonlar}'da listelenmiştir.
+
+\begin{table}[H]
+\centering
+\caption{Çalışmada Kullanılan Meteoroloji İstasyonları}
+\label{tab:istasyonlar}
+\begin{tabular}{llrrr}
+\toprule
+İstasyon No & İstasyon Adı & Enlem & Boylam & Rakım (m) \\
+\midrule
+17285 & Hakkari Merkez & 37.5745 & 43.7388 & 1727 \\
+17920 & Yüksekova & 37.5785 & 44.2862 & 1877 \\
+18234 & Şemdinli & 37.2950 & 44.5819 & 1284 \\
+18771 & Durankaya & 37.5600 & 43.6094 & 1825 \\
+17815 & Yüksekova Havalimanı & 37.5481 & 44.2399 & 1854 \\
+19909 & Kayak Merkezi & 37.5714 & 43.6818 & 2516 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Veri Kaynakları}
+
+\subsection{Yıldırım Verileri}
+
+Yıldırım verileri, Meteoroloji Genel Müdürlüğü Yıldırım Tespit Sistemi'nden (YILTES) elde edilmiştir. Veri seti aşağıdaki bilgileri içermektedir:
+
+\begin{itemize}
+    \item Olay zamanı (yıl-ay-gün saat:dakika:saniye.milisaniye)
+    \item Konum (enlem, boylam - WGS84 koordinat sistemi)
+    \item Yükseklik (km)
+    \item Akım miktarı (kA)
+    \item Olay tipi (Yıldırım/Şimşek)
+    \item Referans noktasına mesafe (km)
+\end{itemize}
+
+Toplamda yaklaşık 258,000 yıldırım/şimşek olayı kaydedilmiştir (2015-2025).
+
+\subsection{Meteorolojik Veriler}
+
+Günlük meteorolojik veriler Meteoroloji Genel Müdürlüğü'nden temin edilmiştir:
+
+\begin{itemize}
+    \item Maksimum, minimum ve ortalama sıcaklık (°C)
+    \item Ortalama aktüel basınç (hPa)
+    \item Ortalama nispi nem (\%)
+    \item Ortalama bulutluluk (8 Okta)
+    \item Maksimum rüzgar hızı ve yönü (m/s)
+    \item Toplam yağış (mm)
+    \item Yatay görüş mesafesi (km)
+\end{itemize}
+
+\section{Veri Ön İşleme}
+
+\subsection{Veri Temizleme}
+
+\begin{enumerate}
+    \item Tarih formatlarının standardizasyonu
+    \item Eksik değerlerin incelenmesi
+    \item Aykırı değerlerin tespiti
+\end{enumerate}
+
+\subsection{Konum Eşleştirmesi}
+
+Her yıldırım olayı, koordinatlarına en yakın meteoroloji istasyonuna eşleştirilmiştir. Bu işlem Öklid mesafesi kullanılarak gerçekleştirilmiştir.
+
+\subsection{Günlük Agregasyon}
+
+Yıldırım verileri istasyon ve tarih bazında günlük olarak özetlenmiştir:
+\begin{itemize}
+    \item Günlük yıldırım sayısı
+    \item Ortalama akım değeri
+    \item Maksimum akım değeri
+\end{itemize}
+
+\section{Veri Seti İstatistikleri}
+
+Şekil \ref{fig:yillik} ve Şekil \ref{fig:aylik} yıldırım olaylarının zamansal dağılımını göstermektedir.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{yillik_yildirim.png}
+\caption{Yıllara Göre Yıldırım/Şimşek Olayları}
+\label{fig:yillik}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{aylik_yildirim.png}
+\caption{Aylara Göre Yıldırım/Şimşek Dağılımı}
+\label{fig:aylik}
+\end{figure}
+
+\section{Hedef Değişken}
+
+Hedef değişken olarak ikili sınıflandırma kullanılmıştır:
+\begin{equation}
+    y = \begin{cases} 
+        1 & \text{günde en az 1 yıldırım olayı var} \\
+        0 & \text{yıldırım olayı yok}
+    \end{cases}
+\end{equation}

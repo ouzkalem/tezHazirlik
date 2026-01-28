@@ -1,0 +1,52 @@
+\section{Yıldırım Oluşumu ve Meteoroloji}
+
+Yıldırım, atmosferde meydana gelen elektriksel boşalma olayıdır. Konvektif bulutlar (Cumulonimbus) içinde buz parçacıkları ve su damlacıklarının çarpışması sonucu elektrik yükü birikir. Bu birikimin belirli bir eşik değerini aşması durumunda yıldırım meydana gelir \citep{rakov2003lightning}.
+
+Yıldırım oluşumunu etkileyen temel meteorolojik faktörler:
+
+\begin{itemize}
+    \item Atmosferik instabilite
+    \item Nem içeriği
+    \item Sıcaklık gradyanı
+    \item Rüzgar kesimi (wind shear)
+    \item Topografik özellikler
+\end{itemize}
+
+\section{Yıldırım Tahmini Çalışmaları}
+
+\subsection{Geleneksel Yöntemler}
+
+Erken dönem yıldırım tahmin çalışmaları, genellikle radar verilerine ve atmosferik parametrelere dayalı eşik değerleri kullanmıştır. K-indeksi, Total Totals indeksi ve CAPE (Convective Available Potential Energy) gibi atmosferik stabilite indeksleri yıldırım potansiyelinin değerlendirilmesinde yaygın olarak kullanılmaktadır.
+
+\subsection{Makine Öğrenmesi Tabanlı Yöntemler}
+
+Son yıllarda makine öğrenmesi algoritmaları yıldırım tahmini alanında önemli gelişmeler sağlamıştır:
+
+\begin{itemize}
+    \item \textbf{Random Forest:} Birçok karar ağacının kombinasyonu ile yüksek doğruluk sağlar.
+    \item \textbf{Gradient Boosting:} XGBoost ve LightGBM gibi algoritmalar yüksek performans göstermektedir.
+    \item \textbf{Derin Öğrenme:} CNN ve LSTM gibi mimariler radar görüntüleri ve zaman serisi verileri için kullanılmaktadır.
+\end{itemize}
+
+\section{Türkiye'de Yıldırım Çalışmaları}
+
+Türkiye'de yıldırım aktivitesi özellikle İç Anadolu, Doğu Anadolu ve Karadeniz bölgelerinde yoğun olarak gözlemlenmektedir. Meteoroloji Genel Müdürlüğü tarafından işletilen Yıldırım Tespit Sistemi (YILTES), ülke genelinde yıldırım olaylarını kaydetmektedir.
+
+Bölgesel çalışmalar, yıldırım aktivitesinin:
+\begin{itemize}
+    \item Yaz aylarında (Mayıs-Eylül) en yoğun olduğunu
+    \item Öğleden sonra saatlerinde pik yaptığını
+    \item Dağlık bölgelerde daha sık görüldüğünü
+\end{itemize}
+ortaya koymaktadır.
+
+\section{Bu Çalışmanın Literatürdeki Yeri}
+
+Bu çalışma, önceki çalışmalardan farklı olarak:
+
+\begin{enumerate}
+    \item Hakkari gibi yüksek rakımlı bir bölgeye odaklanmaktadır.
+    \item Uzun süreli (10 yıllık) veri seti kullanmaktadır.
+    \item Günlük tahmin için optimize edilmiş özellikler geliştirmektedir.
+    \item Birden fazla makine öğrenmesi algoritmasını karşılaştırmaktadır.
+\end{enumerate}

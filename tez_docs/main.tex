@@ -1,0 +1,108 @@
+\documentclass[12pt,a4paper]{report}
+
+% Türkçe dil desteği
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+
+% Sayfa düzeni
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% Grafik ve tablo paketleri
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{subcaption}
+
+% Matematik
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Renk ve bağlantılar
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue
+}
+
+% Kod blokları
+\usepackage{listings}
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    breaklines=true,
+    frame=single
+}
+
+% Kaynakça
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+% Grafik yolu
+\graphicspath{{figures/}}
+
+% Başlık bilgileri
+\title{
+    \textbf{Meteorolojik Veriler Kullanılarak Yıldırım Tahmini: Hakkari Bölgesi Örneği}
+}
+\author{
+    [Öğrenci Adı Soyadı] \\
+    \\
+    \small Danışman: [Danışman Adı] \\
+    \small [Üniversite Adı] \\
+    \small [Fakülte / Enstitü Adı]
+}
+\date{\today}
+
+\begin{document}
+
+% Kapak
+\maketitle
+
+% Özet
+\begin{abstract}
+Bu çalışmada, Hakkari bölgesinde yıldırım olaylarının tahmin edilmesi amacıyla makine öğrenmesi yöntemleri kullanılmıştır. 2015-2025 yılları arasında toplanan günlük meteorolojik veriler (sıcaklık, nem, basınç, rüzgar, bulutluluk, yağış) ve yıldırım tespit sistemi verileri kullanılarak ikili sınıflandırma modelleri geliştirilmiştir. Çalışmada Lojistik Regresyon, Random Forest, XGBoost ve LightGBM algoritmaları karşılaştırılmış ve en yüksek performans gösteren model belirlenmiştir. Sonuçlar, meteorolojik özelliklerin yıldırım tahmini için önemli bir öngörü gücüne sahip olduğunu göstermektedir.
+
+\textbf{Anahtar Kelimeler:} Yıldırım tahmini, makine öğrenmesi, meteorolojik veriler, sınıflandırma, Hakkari
+\end{abstract}
+
+% İçindekiler
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Ana bölümler
+\chapter{Giriş}
+\input{chapters/01_giris}
+
+\chapter{Literatür Taraması}
+\input{chapters/02_literatur}
+
+\chapter{Yöntem}
+\input{chapters/03_yontem}
+
+\chapter{Veri Seti ve Ön İşleme}
+\input{chapters/04_veri}
+
+\chapter{Deneysel Sonuçlar}
+\input{chapters/05_sonuclar}
+
+\chapter{Tartışma ve Sonuç}
+\input{chapters/06_tartisma}
+
+% Kaynakça
+\bibliography{references}
+
+\end{document}

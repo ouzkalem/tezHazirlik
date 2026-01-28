@@ -1,0 +1,7 @@
+?stasyon Numaras?|?stasyon Ad?|?l|?l?e|Enlem|Boylam|Rak?m
+17285|HAKKAR?|Hakkari|Merkez|37.5745|43.7388|1727
+17920|Y?KSEKOVA|Hakkari|Y?ksekova|37.5785|44.2862|1877
+18234|?EMD?NL?|Hakkari|?emdinli|37.2950|44.5819|1284
+18771|HAKKAR?/DURANKAYA BELDES?|Hakkari|Merkez|37.56|43.6094|1825
+17815|HAKKAR? Y?KSEKOVA SELAHADD?N EYYUB? HAVAL?MANI|Hakkari|Y?ksekova|37.5481|44.2399|1854
+19909|Hakkari Kayak Merkezi|Hakkari|Merkez|37.571393|43.6818|2516

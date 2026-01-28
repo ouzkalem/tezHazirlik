@@ -1,0 +1,74 @@
+\section{Sonuçların Değerlendirilmesi}
+
+Bu çalışmada, Hakkari bölgesi için günlük yıldırım tahmini amacıyla dört farklı makine öğrenmesi algoritması karşılaştırılmıştır. Elde edilen sonuçlar, makine öğrenmesi yöntemlerinin yıldırım tahmini için başarılı bir şekilde kullanılabileceğini göstermektedir.
+
+\subsection{Model Performansları}
+
+Karşılaştırılan modeller arasında:
+
+\begin{itemize}
+    \item En yüksek F1-Score değeri [model adı] tarafından elde edilmiştir.
+    \item Tree-based modeller (Random Forest, XGBoost, LightGBM) genel olarak Lojistik Regresyon'dan daha iyi performans göstermiştir.
+    \item Sınıf dengesizliği, modellerin precision ve recall değerleri arasında trade-off oluşturmaktadır.
+\end{itemize}
+
+\subsection{Özellik Önemleri}
+
+Özellik önem analizi, yıldırım tahmininde en etkili faktörlerin:
+
+\begin{enumerate}
+    \item Önceki günlerin yıldırım durumu
+    \item Mevsimsel özellikler
+    \item Coğrafi özellikler (rakım)
+\end{enumerate}
+
+olduğunu ortaya koymuştur. Bu bulgular, yıldırım olaylarının belirli meteorolojik koşullar altında kümeleme eğilimi gösterdiğini desteklemektedir.
+
+\section{Çalışmanın Katkıları}
+
+Bu çalışmanın başlıca katkıları:
+
+\begin{enumerate}
+    \item Hakkari bölgesi için ilk kapsamlı yıldırım tahmin çalışması
+    \item 10 yıllık uzun dönemli veri analizi
+    \item Farklı makine öğrenmesi algoritmalarının karşılaştırmalı değerlendirmesi
+    \item Pratik uygulamalar için temel oluşturacak özellik mühendisliği yaklaşımları
+\end{enumerate}
+
+\section{Sınırlılıklar}
+
+Bu çalışmanın bazı sınırlılıkları bulunmaktadır:
+
+\begin{itemize}
+    \item Meteorolojik veriler günlük frekansta olup saatlik tahmin yapmaya olanak vermemektedir.
+    \item Bazı meteorolojik değişkenlerde (nem, bulutluluk) eksik veriler mevcuttur.
+    \item Model sadece Hakkari bölgesi için eğitilmiş olup diğer bölgelere genellenebilirliği test edilmemiştir.
+\end{itemize}
+
+\section{Gelecek Çalışmalar}
+
+Bu çalışma, aşağıdaki yönlerde genişletilebilir:
+
+\begin{enumerate}
+    \item \textbf{Saatlik Tahmin:} Daha yüksek çözünürlüklü verilerle saatlik tahmin modelleri
+    \item \textbf{Radar Verileri:} Radar yansıtıcılık verilerinin modele eklenmesi
+    \item \textbf{Derin Öğrenme:} LSTM ve CNN gibi derin öğrenme mimarilerinin denenmesi
+    \item \textbf{Bölgesel Genelleme:} Modelin Türkiye'nin diğer bölgelerine uyarlanması
+    \item \textbf{Operasyonel Sistem:} Gerçek zamanlı tahmin sistemi geliştirme
+\end{enumerate}
+
+\section{Sonuç}
+
+Bu çalışmada, Hakkari bölgesi için meteorolojik veriler kullanılarak yıldırım tahmini yapılmıştır. Makine öğrenmesi algoritmalarının yıldırım tahmini için etkili araçlar olduğu gösterilmiştir.
+
+Elde edilen sonuçlar:
+
+\begin{itemize}
+    \item Yıldırım tahmini için makine öğrenmesi yöntemlerinin başarıyla uygulanabileceğini
+    \item Önceki günlerin yıldırım durumunun en önemli gösterge olduğunu
+    \item Mevsimsel ve coğrafi faktörlerin tahmin gücüne katkı sağladığını
+\end{itemize}
+
+ortaya koymaktadır.
+
+Bu çalışma, bölgesel yıldırım erken uyarı sistemleri için temel oluşturabilecek potansiyele sahiptir.

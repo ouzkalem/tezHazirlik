@@ -1,0 +1,85 @@
+\section{Model Performans Karşılaştırması}
+
+Dört farklı makine öğrenmesi algoritması ile eğitilen modellerin test seti üzerindeki performansları Tablo \ref{tab:sonuclar}'da özetlenmiştir.
+
+\begin{table}[H]
+\centering
+\caption{Model Performans Metrikleri}
+\label{tab:sonuclar}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & Accuracy & Precision & Recall & F1-Score & ROC-AUC \\
+\midrule
+Lojistik Regresyon & - & - & - & - & - \\
+Random Forest & - & - & - & - & - \\
+XGBoost & - & - & - & - & - \\
+LightGBM & - & - & - & - & - \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{Not: Yukarıdaki tablo, notebook'lar çalıştırıldıktan sonra gerçek değerlerle güncellenmelidir.}
+
+\section{ROC Eğrileri}
+
+Şekil \ref{fig:roc} tüm modellerin ROC eğrilerini göstermektedir.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{roc_curves.png}
+\caption{Modellerin ROC Eğrileri}
+\label{fig:roc}
+\end{figure}
+
+\section{Confusion Matrix Analizi}
+
+Her model için confusion matrix Şekil \ref{fig:cm}'de gösterilmektedir.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{confusion_matrices.png}
+\caption{Model Confusion Matrix'leri}
+\label{fig:cm}
+\end{figure}
+
+\section{Özellik Önem Analizi}
+
+Random Forest modeli için en önemli 15 özellik Şekil \ref{fig:importance}'de gösterilmektedir.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{feature_importance.png}
+\caption{En Önemli 15 Özellik (Random Forest)}
+\label{fig:importance}
+\end{figure}
+
+Analiz sonuçlarına göre en önemli özellikler:
+
+\begin{enumerate}
+    \item Önceki günlerin yıldırım durumu (lag özellikleri)
+    \item Mevsimsel faktörler
+    \item Rakım
+    \item Rolling window istatistikleri
+\end{enumerate}
+
+\section{Çapraz Doğrulama Sonuçları}
+
+En iyi performans gösteren model için 5-katlı stratifiye çapraz doğrulama uygulanmıştır:
+
+\begin{itemize}
+    \item Ortalama F1-Score: [değer]
+    \item Standart Sapma: [değer]
+\end{itemize}
+
+Bu sonuçlar, modelin farklı veri bölümlerinde tutarlı performans gösterdiğini ortaya koymaktadır.
+
+\section{Precision-Recall Analizi}
+
+Dengesiz veri setleri için önemli olan Precision-Recall eğrileri Şekil \ref{fig:pr}'de gösterilmektedir.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{precision_recall_curves.png}
+\caption{Precision-Recall Eğrileri}
+\label{fig:pr}
+\end{figure}

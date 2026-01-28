@@ -1,0 +1,103 @@
+\section{Problem Tanımı}
+
+Bu çalışmada yıldırım tahmini bir \textbf{ikili sınıflandırma} problemi olarak ele alınmıştır. Amaç, belirli bir günde ve belirli bir istasyon bölgesinde yıldırım olayının gerçekleşip gerçekleşmeyeceğini tahmin etmektir.
+
+\begin{equation}
+    y = \begin{cases} 
+        1 & \text{yıldırım var} \\
+        0 & \text{yıldırım yok}
+    \end{cases}
+\end{equation}
+
+\section{Veri Birleştirme Yaklaşımı}
+
+Yıldırım verileri koordinat bazlı olduğundan, her yıldırım olayı en yakın meteoroloji istasyonuna eşleştirilmiştir. En yakın istasyon belirlenmesinde Öklid mesafesi kullanılmıştır:
+
+\begin{equation}
+    d = \sqrt{(\phi_1 - \phi_2)^2 + (\lambda_1 - \lambda_2)^2}
+\end{equation}
+
+burada $\phi$ enlem, $\lambda$ boylam koordinatlarını temsil etmektedir.
+
+\section{Özellik Mühendisliği}
+
+\subsection{Zaman Özellikleri}
+
+Tarih bilgisinden türetilen özellikler:
+\begin{itemize}
+    \item Ay, gün, yılın günü
+    \item Mevsim (döngüsel kodlama)
+    \item Haftanın günü
+\end{itemize}
+
+Döngüsel özellikler sinüs ve kosinüs dönüşümü ile kodlanmıştır:
+\begin{equation}
+    x_{sin} = \sin\left(\frac{2\pi \cdot t}{T}\right), \quad
+    x_{cos} = \cos\left(\frac{2\pi \cdot t}{T}\right)
+\end{equation}
+
+\subsection{Gecikme (Lag) Özellikleri}
+
+Önceki günlerin yıldırım durumu önemli bir gösterge olabilir. Bu nedenle 1, 2, 3 ve 7 günlük gecikme özellikleri oluşturulmuştur:
+
+\begin{equation}
+    x_t^{(lag-k)} = x_{t-k}
+\end{equation}
+
+\subsection{Hareketli Pencere İstatistikleri}
+
+Son 3, 7 ve 14 günlük dönemler için ortalama ve toplam yıldırım sayıları hesaplanmıştır:
+
+\begin{equation}
+    \bar{x}_{t,w} = \frac{1}{w} \sum_{i=1}^{w} x_{t-i}
+\end{equation}
+
+\section{Makine Öğrenmesi Algoritmaları}
+
+\subsection{Lojistik Regresyon}
+
+Lojistik regresyon, ikili sınıflandırma için temel bir yöntemdir:
+
+\begin{equation}
+    P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \beta^T x)}}
+\end{equation}
+
+\subsection{Random Forest}
+
+Random Forest, birden fazla karar ağacının oylaması ile çalışır:
+
+\begin{equation}
+    \hat{y} = \text{mode}\{h_1(x), h_2(x), ..., h_B(x)\}
+\end{equation}
+
+burada $h_b(x)$ her bir karar ağacının tahminidir.
+
+\subsection{XGBoost}
+
+XGBoost, gradient boosting algoritmasının optimize edilmiş versiyonudur:
+
+\begin{equation}
+    \hat{y}_i^{(t)} = \hat{y}_i^{(t-1)} + f_t(x_i)
+\end{equation}
+
+burada $f_t$ t. iterasyonda eklenen ağaçtır.
+
+\subsection{LightGBM}
+
+LightGBM, büyük veri setleri için optimize edilmiş gradient boosting algoritmasıdır. Leaf-wise büyüme stratejisi kullanır.
+
+\section{Değerlendirme Metrikleri}
+
+Dengesiz veri setleri için uygun metrikler kullanılmıştır:
+
+\begin{itemize}
+    \item \textbf{Accuracy (Doğruluk):} $\frac{TP + TN}{TP + TN + FP + FN}$
+    \item \textbf{Precision (Kesinlik):} $\frac{TP}{TP + FP}$
+    \item \textbf{Recall (Duyarlılık):} $\frac{TP}{TP + FN}$
+    \item \textbf{F1-Score:} $2 \cdot \frac{Precision \cdot Recall}{Precision + Recall}$
+    \item \textbf{ROC-AUC:} ROC eğrisi altında kalan alan
+\end{itemize}
+
+\section{Çapraz Doğrulama}
+
+Model performansının güvenilirliği için 5-katlı stratifiye çapraz doğrulama uygulanmıştır.
